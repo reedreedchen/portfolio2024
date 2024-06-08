@@ -30,7 +30,7 @@ h2
 
 .card
 {            
-    flex: 0 1 200px;
+    justify-content: center;
     color: black;
     padding: 20px;
     border-radius: 2%;
@@ -53,6 +53,26 @@ h2
 {
     float: left;
     margin-right: 20px;
+}
+
+.school.section .container .card
+{
+    max-width: 300px;
+}
+
+.work.section .container .card
+{
+    max-width: 300px;
+}
+
+.other.section .container .card
+{
+    max-width:200px;
+}
+
+.projects.section .container .card
+{
+    flex: 0 1 300px;
 }
 
 .projects.section .container .card.sma
@@ -81,4 +101,13 @@ h2
 {
     border-radius: 5px;
     width: 100%;
+}
+
+@media (max-width: 600px){
+    .projects.section .container .card
+    {
+        flex-direction: column;
+        flex: auto;
+    }
+    
 }
