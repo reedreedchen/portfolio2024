@@ -1,0 +1,63 @@
+body
+{
+    font-family: "LXGW WenKai TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #75A47F;
+}
+
+h1{
+    color: black;
+    text-shadow:2px 3px 1px #BACD92;
+}
+
+h2
+{
+    clear: both;
+    color: #1F1717;
+    text-shadow:2px 3px 1px #BACD92;
+    margin: 20px;
+}
+
+.section
+{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #BACD92;
+    background-color: #FCFFE0;
+    border-radius: 20px;
+}
+
+.card
+{            
+    flex-basis: 200px;
+    width: 200px;
+    color: black;
+    padding: 20px;
+    border-radius: 2%;
+}
+
+.container
+{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.intro.section .card{
+
+    flex-basis: auto;
+    width: auto;
+}
+
+.intro.section img
+{
+    float: left;
+    margin-right: 20px;
+}
+
+.projects.section .container .card img /* project圖 */
+{
+    border-radius: 5px;
+    width: 100%;
+}
