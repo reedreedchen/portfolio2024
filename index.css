@@ -56,6 +56,28 @@ h2
     margin-right: 20px;
 }
 
+.projects.section .container .card.sma
+{
+    order: 0;
+}
+   
+.projects.section .container .card.whiizu
+{
+    order: 1;
+}
+.projects.section .container .card.sranipal
+{
+    order: 2;
+}
+.projects.section .container .card.srworks
+{
+    order: 3;
+}
+
+.projects.section .container .card.homehealthcare
+{
+    order: 4;
+}
 .projects.section .container .card img /* project圖 */
 {
     border-radius: 5px;
