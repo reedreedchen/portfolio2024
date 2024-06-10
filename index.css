@@ -17,16 +17,22 @@ h2
     clear: both;
     color: #1F1717;
     text-shadow:2px 3px 1px #BACD92;
-    padding: 10px;
+    margin: 20px;
 }
 
-.section svg{
+h3
+{
+    margin: 20px;
+}
+
+.section svg
+{
     margin-left: 20px;
 }
 
 .section
 {
-    padding: 10px;
+    padding: 50px;
     border: 2px solid #BACD92;
     background-color: #FCFFE0;
     border-radius: 20px;
@@ -36,7 +42,6 @@ h2
 {            
     justify-content: center;
     color: black;
-    padding: 10px;
     border-radius: 2%;
 }
 
@@ -44,20 +49,22 @@ h2
 {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
 .intro.section
 {
-    grid-column: span 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
     order: 0;
 }
 
 .contact.section
 {
-    grid-column: span 1;
-    order: 0;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    order: 5;
  }
 
  .school.section
@@ -69,18 +76,20 @@ h2
  .work.section
  {
     grid-column: span 2;
-     order: 2;
+    order: 2;
  }
  
  .other.section {
-    grid-column: span 3;
-     order: 3;
+    order: 3;
+    grid-column-start: 1;
+    grid-column-end: -1;
  }
  
  .projects.section 
  {
-    grid-column: span 3;
     order: 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
  }
 
 .intro.section img
@@ -93,10 +102,7 @@ h2
 {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr; 
-}
-
-.projects.section .container .card
-{
+   gap: 20px;
 }
 
 .projects.section .container .card.sma
@@ -132,43 +138,44 @@ h2
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(1, auto);
     gap:20px;
 }
 
-@media (max-width: 600px){
-    .projects.section .container
-    {
-        flex-direction: column;
-        flex: auto;
-    }
+@media (max-width: 600px)
+{
     .grid
     {
-        display: grid;
         grid-template-columns: 1fr;
     }
-    
-    .intro.section
+
+    .projects.section .container 
     {
-        grid-column: span 1;
+        grid-template-columns: 1fr; 
     }
     
     .work.section
     {
         grid-column: span 1;
     }
-    
-    .other.section {
-        grid-column: span 1;
-    }
-    
-    .projects.section 
+
+    .section
     {
-        grid-column: span 1;
+        padding: 20px;
     }
 
-    .projects.section .container 
+    h2
     {
-        grid-template-columns: 1fr; 
+        margin: 5px 0px 20px 0px;
+    }
+
+    h3
+    {
+        margin: 5px 0px;
+    }
+
+    .container
+    {
+        flex-direction: column;
+        gap: 0px;
     }
 }
