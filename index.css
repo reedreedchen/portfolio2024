@@ -4,7 +4,6 @@ body
     font-weight: 400;
     font-style: normal;
     background-color: #75A47F;
-    margin: 0px;
 }
 
 h1{
@@ -25,6 +24,10 @@ h3
     margin: 0px 0px 20px 0px;
 }
 
+.container
+{
+    max-width: 100%;
+}
 .section svg
 {
     margin-left: 20px;
@@ -37,73 +40,60 @@ h3
     background-color: #FCFFE0;
 }
 
-.card
+.myCard
 {            
-    justify-content: center;
-    color: black;
-    border-radius: 2%;
+    color: darkred;
 }
 
-.container
-{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    flex-wrap: wrap;
+.card.custom-card
+{            
+    padding:0;
 }
+
 
 .intro.section
 {
-    grid-column-start: 1;
-    grid-column-end: -1;
     order: 0;
 }
 
-.contact.section
+.school.section
+{      
+    order: 1;
+}
+
+.work.section
 {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    order: 5;
+    order: 2;
+}
+
+ .expertise.section {
+    order: 3;
  }
 
- .school.section
- {
-    grid-column: span 1;
-    order: 1;
- }
- 
- .work.section
- {
-    grid-column: span 2;
-    order: 2;
- }
- 
  .other.section {
     order: 3;
-    grid-column-start: 1;
-    grid-column-end: -1;
  }
  
+ .language.section {
+    order: 5;
+ }
+ .hobby.section {
+    order: 5;
+ }
+ .contact.section
+{
+    order: 5;
+ }
  .projects.section 
  {
     order: 4;
-    grid-column-start: 1;
-    grid-column-end: -1;
  }
-
+ 
 .intro.section img
 {
     float: left;
     margin-right: 20px;
 }
-
-.projects.section .container 
-{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr; 
-   gap: 20px;
-}
-
 .projects.section .container .card.sma
 {
     order: 0;
@@ -127,18 +117,6 @@ h3
     order: 4;
 }
 
-.projects.section .container .card img /* project圖 */
-{
-    border-radius: 5px;
-    width: 100%;
-}
-
-.grid
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:10px;
-}
 
 h1
 {
@@ -154,29 +132,5 @@ footer
 
 @media (max-width: 600px)
 {
-    .grid
-    {
-        grid-template-columns: 1fr;
-    }
-
-    .projects.section .container 
-    {
-        grid-template-columns: 1fr; 
-    }
     
-    .work.section
-    {
-        grid-column: span 1;
-    }
-
-    .section
-    {
-        padding: 20px 20px;
-    }
-
-    .container
-    {
-        flex-direction: column;
-        gap: 0px;
-    }
 }
