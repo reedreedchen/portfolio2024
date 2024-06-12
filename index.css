@@ -8,19 +8,14 @@ body
 
 h1{
     color: black;
-    text-shadow:2px 3px 1px #BACD92;
+    text-shadow: 2px 3px 1px #BACD92;
 }
 
 h2
 {
     clear: both;
     color: #1F1717;
-    text-shadow:2px 3px 1px #BACD92;
-    margin: 0px 0px 20px 0px;
-}
-
-h3
-{
+    text-shadow: 2px 3px 1px #BACD92;
     margin: 0px 0px 20px 0px;
 }
 
@@ -28,6 +23,7 @@ h3
 {
     max-width: 100%;
 }
+
 .section svg
 {
     margin-left: 20px;
@@ -35,9 +31,9 @@ h3
 
 .section
 {
-    padding: 50px 100px;
     border: 2px solid #BACD92;
     background-color: #FCFFE0;
+    padding: 40px;
 }
 
 .myCard
@@ -45,78 +41,12 @@ h3
     color: darkred;
 }
 
-.card.custom-card
-{            
-    padding:0;
-}
-
-
-.intro.section
-{
-    order: 0;
-}
-
-.school.section
-{      
-    order: 1;
-}
-
-.work.section
-{
-    order: 2;
-}
-
- .expertise.section {
-    order: 3;
- }
-
- .other.section {
-    order: 3;
- }
- 
- .language.section {
-    order: 5;
- }
- .hobby.section {
-    order: 5;
- }
- .contact.section
-{
-    order: 5;
- }
- .projects.section 
- {
-    order: 4;
- }
  
 .intro.section img
 {
     float: left;
     margin-right: 20px;
 }
-.projects.section .container .card.sma
-{
-    order: 0;
-}
-   
-.projects.section .container .card.whiizu
-{
-    order: 1;
-}
-.projects.section .container .card.sranipal
-{
-    order: 2;
-}
-.projects.section .container .card.srworks
-{
-    order: 3;
-}
-
-.projects.section .container .card.homehealthcare
-{
-    order: 4;
-}
-
 
 h1
 {
@@ -132,5 +62,8 @@ footer
 
 @media (max-width: 600px)
 {
-    
+    .section
+    {
+        padding: 20px;
+    }
 }
