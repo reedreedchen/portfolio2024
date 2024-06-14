@@ -3,7 +3,6 @@ body
     font-family: "LXGW WenKai TC", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #75A47F;
 }
 
 .my-navbar-bg{
@@ -55,6 +54,8 @@ h2
     color: #1F1717;
     text-shadow: 2px 3px 1px #BACD92;
     margin: 0px 0px 20px 0px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #1F1717;
 }
 
 main
@@ -64,9 +65,14 @@ main
 
 .section
 {
-    border: 2px solid #BACD92;
-    background-color: #FCFFE0;
-    padding: 40px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    height: 100%;
+
 }
 
 h1
