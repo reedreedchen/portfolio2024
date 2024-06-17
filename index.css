@@ -3,7 +3,24 @@ body
     font-family: "LXGW WenKai TC", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #75A47F;
 }
+
+main
+{
+    background-color: white;
+}
+
+.home-image{
+    background-color: #75A47F;
+}
+
+
+.home-image img{
+    padding-top: 55px;
+    width: 100%;
+}
+
 
 .my-navbar-bg{
     background-color: #75A47F;
@@ -78,15 +95,6 @@ h2
     width: 45%;
 }
 
-main
-{
-    padding-top: 55px;
-}
-
-.home-image img{
-    width: 100%;
-}
-
 .section
 {
     padding: 20px;
@@ -106,6 +114,7 @@ h1
 
 footer
 {
+    background-color: #75A47F;
     padding: 20px;
     text-align: center;
 }
