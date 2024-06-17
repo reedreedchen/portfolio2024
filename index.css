@@ -44,23 +44,47 @@ body
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+ul
+{
+    padding-left: 1rem;
+}
+
+.list-topic{
+    margin-bottom: 0.5rem;
+}
+
 .my-navbar-title{
     color: black;
-    text-shadow: 2px 3px 1px #BACD92;
 }
 
 h2
 {
     color: #1F1717;
-    text-shadow: 2px 3px 1px #BACD92;
     margin: 0px 0px 20px 0px;
     padding-bottom: 1rem;
     border-bottom: 1px solid #1F1717;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    height: 200px;
+    column-gap: 5%;
+    align-content: flex-start;
+}
+
+.flex-container p{
+    width: 45%;
+}
+
 main
 {
-    padding-top: 3.5rem;
+    padding-top: 55px;
+}
+
+.home-image img{
+    width: 100%;
 }
 
 .section
@@ -72,7 +96,6 @@ main
 
 .card{
     height: 100%;
-
 }
 
 h1
@@ -87,10 +110,15 @@ footer
     text-align: center;
 }
 
-@media (max-width: 600px)
+@media (max-width: 1000px)
 {
-    .section
+    .flex-container
     {
-        padding: 20px;
+        height: auto;
+    }
+
+    .flex-container p
+    {
+        width: 100%;
     }
 }
