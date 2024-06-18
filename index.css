@@ -9,18 +9,26 @@ body
 main
 {
     background-color: white;
+    padding-top: 50px;
+}
+
+.section.profile img
+{
+    height: 150px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.border-round
+{
+    border-radius: 50%;
+    background-color: #75A47F;
+    fill: rebeccapurple;
 }
 
 .home-image{
     background-color: #75A47F;
 }
-
-
-.home-image img{
-    padding-top: 55px;
-    width: 100%;
-}
-
 
 .my-navbar-bg{
     background-color: #75A47F;
@@ -63,41 +71,54 @@ main
 
 ul
 {
-    padding-left: 1rem;
+    padding-left: 0rem;
+}
+
+ul li
+{
+    list-style: none;
+    line-height: 2rem;
+}
+
+ul li:before
+{
+    content:"．";
 }
 
 .list-topic{
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
+    color: #BACD92;
+}
+
+.text
+{
+    max-width: 500px;
+    line-height: 2rem;
+    display: block;
 }
 
 .my-navbar-title{
     color: black;
 }
 
+h1
+{
+    color: #75A47F;
+    margin: 50px;
+    text-align: center;
+}
+
 h2
 {
-    color: #1F1717;
-    margin: 0px 0px 20px 0px;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #1F1717;
+    color: #75A47F;
+    margin: 50px 0px 50px 0px;
+    text-align: center;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column !important;
-    flex-wrap: wrap;
-    height: 200px;
-    column-gap: 5%;
-    align-content: flex-start;
-}
-
-.flex-container p{
-    width: 45%;
-}
 
 .section
 {
-    padding: 20px;
+    padding: 40px 100px;
     height: 100%;
     width: 100%;
 }
@@ -106,10 +127,39 @@ h2
     height: 100%;
 }
 
-h1
+.center-block{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.expertice-image{
+    min-height: 50px;
+    max-height: 150px;
+}
+
+.btn {
+    margin: 50px auto 50px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #75A47F;
+    --bs-btn-border-color: #BACD92;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #BACD92;
+    --bs-btn-hover-border-color: #75A47F;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #75A47F;
+    --bs-btn-active-border-color: #75A47F;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #75A47F;
+    --bs-btn-disabled-border-color: #75A47F;
+}
+
+.section.btn
 {
-    padding: 20px;
-    text-align: center;
+    display: block;
+    margin: 40% auto 60%
 }
 
 footer
@@ -121,13 +171,8 @@ footer
 
 @media (max-width: 1000px)
 {
-    .flex-container
+    .section
     {
-        height: auto;
-    }
-
-    .flex-container p
-    {
-        width: 100%;
+        padding: 40px 20px;
     }
 }
