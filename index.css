@@ -24,7 +24,12 @@ main
 .home2
 {
     background-color: skyblue;
-    height: 20vh;
+    height: 10vh;
+}
+.home3
+{
+    background-color: #2F9C2F;
+    height: 10vh;
 }
 .section.profile
 {
