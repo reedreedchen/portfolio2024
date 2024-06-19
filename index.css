@@ -16,12 +16,16 @@ main
     padding: 40px 20px;
 }
 
-.home
+.home1
 {
     background-color: skyblue;
-    height: 576px;
+    height: 80vh;
 }
-
+.home2
+{
+    background-color: skyblue;
+    height: 20vh;
+}
 .section.profile
 {
     margin-top: 80px;
