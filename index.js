@@ -9,29 +9,21 @@ function onResize()
 }
 
 addEventListener("resize",onResize);
-SetLoading(false);
 
 function draw()
 {
-    console.log("set size");
     // 尺寸
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    console.log("set bg");
-
     //背景
     canvas.setAttribute('style', 'background-color: skyblue');
-
-    console.log("set grass");
 
     //草地
     context.fillStyle="#2F9C2F";
     var _height= canvas.getAttribute("height");
     var _width=canvas.getAttribute("width");
     context.fillRect(0,_height*0.8,_width,_height*0.2);
-
-    console.log("set pug");
 
     //狗
     var pugImg=new Image();
@@ -40,8 +32,6 @@ function draw()
     {
         context.drawImage(pugImg, _width*0.2, _height*0.8-pugImg.height, pugImg.width,pugImg.height);
     }
-
-    console.log("set cloud");
 
     //雲
     var cloudImg=new Image();
@@ -52,8 +42,6 @@ function draw()
         context.drawImage(cloudImg, _width*0.8, _height*0.2, 90, 90 * cloudImg.height/cloudImg.width);
     }
 
-    console.log("set grass");
-
     //草
     var grassImg=new Image();
     grassImg.src="images/grass.svg";
@@ -61,7 +49,6 @@ function draw()
     {
         context.drawImage(grassImg, _width*0.75, _height*0.8-50, 50,50);
     }
-
     
     //字1
     context.font="30px Playwrite US Trad";
