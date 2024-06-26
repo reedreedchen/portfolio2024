@@ -27,7 +27,7 @@ function draw()
 
     //狗
     var pugImg=new Image();
-    pugImg.src="images/dog.svg";
+    pugImg.src="./images/dog.svg";
     pugImg.onload = function()
     {
         context.drawImage(pugImg, _width*0.2, _height*0.8-pugImg.height, pugImg.width,pugImg.height);
@@ -35,7 +35,7 @@ function draw()
 
     //雲
     var cloudImg=new Image();
-    cloudImg.src="images/cloud.svg";
+    cloudImg.src="./images/cloud.svg";
     cloudImg.onload= function()
     {
         context.drawImage(cloudImg, _width*0.15, _height*0.1, 120,120 * cloudImg.height/cloudImg.width);
@@ -44,7 +44,7 @@ function draw()
 
     //草
     var grassImg=new Image();
-    grassImg.src="images/grass.svg";
+    grassImg.src="./images/grass.svg";
     grassImg.onload= function()
     {
         context.drawImage(grassImg, _width*0.75, _height*0.8-50, 50,50);
