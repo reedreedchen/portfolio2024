@@ -13,32 +13,18 @@ var cloudImg=new Image();
 cloudImg.src="images/cloud.svg";
 cloudImg.onload = onImageLoaded;
 
-var imageLoaded=0;
+//背景
+canvas.setAttribute('style', 'background-color: skyblue');
 
-Draw();
+var imageLoaded=0;
 
 function onResize()
 {
     context.clearRect(0,0,canvas.height,canvas.width);
     Draw();
-    DrawTextAndImages();
 }
 
 addEventListener("resize",onResize);
-
-function Draw()
-{
-    // 尺寸
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    //背景
-    canvas.setAttribute('style', 'background-color: skyblue');
-
-    //草地
-    context.fillStyle="#2F9C2F";
-    context.fillRect(0, canvas.height * 0.8, canvas.width,  canvas.height * 0.2);
-}
 
 function onImageLoaded()
 {
@@ -47,15 +33,23 @@ function onImageLoaded()
     if(imageLoaded===3)
     {
         //畫圖跟字
-        DrawTextAndImages();
+        Draw();
 
         //解鎖
         SetLoading(false);
     }
 }
 
-function DrawTextAndImages()
+function Draw()
 {
+    //尺寸
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    //草地
+    context.fillStyle="#2F9C2F";
+    context.fillRect(0, canvas.height * 0.8, canvas.width,  canvas.height * 0.2);
+
     //圖
     context.drawImage(cloudImg, canvas.width * 0.15, canvas.height * 0.1, 120,120 * cloudImg.height/cloudImg.width);
     context.drawImage(cloudImg, canvas.width * 0.8 - 90, canvas.height * 0.2, 90, 90 * cloudImg.height/cloudImg.width);
