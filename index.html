@@ -19,26 +19,10 @@
       
         <title>Renee Home 2024</title>
     <body>
+        <div id="cover">loading...</div>
+        <span style="font-family: Playwrite US Trad;"></span>
         <main>
-            <div class="home1">
-                <img style="height: 120px; position: absolute; left: 15%; top: 30px" src="images/cloud.svg" alt="cloud-image">
-                <img style="height: 90px; position: absolute; right: 10%; top: 270px" src="images/cloud.svg" alt="cloud-image">
-                <div class="center-block text-center" style="padding-top:190px">
-                    <p style="font-size: 30pt; font-family: Playwrite US Trad;">I'm Renee.</p>
-                    <p style="font-size: 20pt;">a coder.</p>
-                </div>
-            </div>
-            <div class="home2 align-items-end d-flex">
-                <div class="col-6 col-sm-4 text-end">
-                    <img style="height: 150px;" src="images/dog.svg" alt="dog-image">
-                </div>
-                <div class="col-3 col-sm-5 text-end">
-                    <img style="height: 50px;" src="images/grass.svg" alt="dog-image">
-                </div>
-            </div>
-            <div class="home3">
-            </div>
-
+            <canvas id="canvas" style="border: 1px solid black"></canvas>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -124,8 +108,8 @@
                                 <div class="col-lg-6 col-sm-12 order-2">
                                     <div class="card">
                                         <img src="images/whiizu.jpg" class="card-img-top" alt="image of the whiizu project">
-                                        <div class="card-body">
-                                        <h5 class="card-title">WhiizU (2021-2022)</h5>
+                                        <!-- <div class="card-body">
+                                        <h5 class="card-title">WhiizU (2021-2022)</h5> -->
                                         <p class="card-text">健身車遊戲，我負責Shader的編寫、與Shader相關美術編輯器，偶爾支援前端介面的製作。</p>
                                         <a href="https://www.youtube.com/watch?v=N7G_WVXvw9M&t=1s" class="btn btn-primary">Demo</a>
                                     </div>
@@ -159,6 +143,7 @@
                 </div>
             </div>
         </main>
+    <script src="index.js" />
     </body>
     <footer>
             <img src="images/cat.png" height="20" alt="cat image">
