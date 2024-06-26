@@ -1,22 +1,22 @@
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext('2d');
 
-var grassImg=new Image();
-grassImg.src="images/grass.svg";
+var grassImg = new Image();
+grassImg.src = "images/grass.svg";
 grassImg.onload = onImageLoaded;
 
-var pugImg=new Image();
-pugImg.src="images/dog.svg";
+var pugImg = new Image();
+pugImg.src = "images/dog.svg";
 pugImg.onload = onImageLoaded;
 
-var cloudImg=new Image();
-cloudImg.src="images/cloud.svg";
+var cloudImg = new Image();
+cloudImg.src = "images/cloud.svg";
 cloudImg.onload = onImageLoaded;
 
 //背景
 canvas.setAttribute('style', 'background-color: skyblue');
 
-var imageLoaded=0;
+var imageLoaded = 0;
 
 function onResize()
 {
