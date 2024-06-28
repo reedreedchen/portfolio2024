@@ -1,4 +1,4 @@
-var canvas = document.getElementById("canvas");
+var canvas = document.querySelector(".canvas");
 var context = canvas.getContext('2d');
 
 var grassImg = new Image();
@@ -12,9 +12,6 @@ pugImg.onload = onImageLoaded;
 var cloudImg = new Image();
 cloudImg.src = "images/cloud.svg";
 cloudImg.onload = onImageLoaded;
-
-//背景
-canvas.setAttribute('style', 'background-color: skyblue');
 
 var imageLoaded = 0;
 
@@ -36,7 +33,8 @@ function onImageLoaded()
         Draw();
 
         //解鎖
-        SetLoading(false);
+        document.querySelector("body").classList.add("overflow-auto");
+        document.querySelector(".cover").classList.add("display-none");
     }
 }
 
@@ -45,6 +43,10 @@ function Draw()
     //尺寸
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
+    //背景
+    context.fillStyle="skyBlue";
+    context.fillRect(0, 0, canvas.width,  canvas.height * 0.8);
 
     //草地
     context.fillStyle="#2F9C2F";
@@ -66,10 +68,4 @@ function Draw()
     //字2
     context.font="20px LXGW WenKai TC";
     context.fillText("a coder", canvas.width * 0.5, canvas.height * 0.5);
-}
-
-function SetLoading(on)
-{
-    document.querySelector("body").setAttribute("style", on? "overflow: hidden" : "overflow: auto");
-    document.getElementById("cover").setAttribute("style",on? "display: block" : "display: none");
 }

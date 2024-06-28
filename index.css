@@ -1,4 +1,14 @@
-#cover
+.display-none
+{
+    display:none;
+}
+
+.overflow-auto
+{
+    overflow:auto;
+}
+
+.cover
 {
     width: 100%;
     color:black;
