@@ -44,18 +44,22 @@ function Draw()
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    //背景
-    context.fillStyle="skyBlue";
+    //天空
+    var gradient = context.createLinearGradient(canvas.width*0.5,0,canvas.width*0.5,canvas.height);
+    gradient.addColorStop(0, "#00bfff");
+    gradient.addColorStop(0.6, "skyBlue");
+    gradient.addColorStop(0.8, "skyBlue");
+    context.fillStyle = gradient;
     context.fillRect(0, 0, canvas.width,  canvas.height * 0.8);
 
     //草地
-    context.fillStyle="#2F9C2F";
-    context.fillRect(0, canvas.height * 0.8, canvas.width,  canvas.height * 0.2);
+    context.fillStyle = "#2F9C2F";
+    context.fillRect(0, canvas.height*0.8, canvas.width,  canvas.height*0.8);
 
     //圖
     context.drawImage(cloudImg, canvas.width * 0.15, canvas.height * 0.1, 120,120 * cloudImg.height/cloudImg.width);
     context.drawImage(cloudImg, canvas.width * 0.8 - 90, canvas.height * 0.2, 90, 90 * cloudImg.height/cloudImg.width);
-    context.drawImage(grassImg, canvas.width * 0.75-50, canvas.height * 0.8 - 50, 50, 50);
+    context.drawImage(grassImg, canvas.width * 0.75 - 50, canvas.height * 0.8 - 49, 50, 50);
     context.drawImage(pugImg, canvas.width * 0.2, canvas.height * 0.84 - pugImg.height, pugImg.width, pugImg.height);
         
     //字1
