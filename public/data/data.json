@@ -1,0 +1,83 @@
+{
+    "intro":
+    {
+        "title":"Hello!",
+        "text":"我是Renee，一位前端工程師。從動畫製作出發、之後成為資深遊戲前端工程師、目前轉向網頁全端開發。"
+    },
+    "work":
+    {
+        "title":"資歷",
+        "texts":
+        [
+            "俄亥俄州立大學．動畫與互動媒體碩士",
+            "台灣碩網．客戶端工程師",
+            "志合訊息．資深工程師",
+            "宏達電．資深工程師",
+            "Ohio Supercomputer Center．GRAship",
+            "Advanced Computing Center for the Arts and Design．GRAship"
+        ]
+    },
+    "expertise":
+    {
+        "title":"專長",
+        "texts":
+        [
+            {
+                "order": 1,
+                "image":"images/web-icon.svg",
+                "alt":"web icon",
+                "title": "網頁開發",
+                "text": "目前積極刷網課，轉向網頁全端。遊戲工程師的底子對自學網頁前端相當有幫助。己有HTML、CSS、Bootstrap Framework、Javascirpt、EJS的切版基礎。已能夠使用Node、Express、Axios串接RESTful API。我期望自己能夠對網頁開發越來越熟悉、以網頁全端為主要專長。"
+            },
+            {
+                "order": 2,
+                "image":"images/game-icon.svg",
+                "alt":"game icon",
+                "title": "遊戲開發",
+                "text": "我曾任VR與手遊工程師，有多年的遊戲前端開發經驗。能夠使用Unity、C#、與Shader語法開發開發複雜的前端系統，比方說角色養成、新手教學、Bundle的管理與下載、商城金流、戰鬥系統。"
+            }
+        ]
+    },
+    "projects": 
+    {
+        "title":"作品",
+        "texts":
+        [
+            {
+                "order": 5,
+                "title": "The Home Healthcare Project (2014-2017)",
+                "text": "與學校護理系合作的居家安全訓練遊戲。我負責所有的美術建模和部份的程式。",
+                "image": "images/homeHealthcare.jpg",
+                "link": "https://vimeo.com/203766617/"
+            },
+            {
+                "order": 4,
+                "title": "SRanipal (2017-2020)",
+                "text": "Vive Pro的AI臉部表情識別工具，我負責製作應用Demo。",
+                "image": "images/sranipal.jpg",
+                "link": "https://www.youtube.com/watch?v=w7qciYfmbFA"
+            },
+            {
+                "order": 3,
+                "title": "SRWorks (2017-2020)",
+                "text": "Vive Pro的AI深度與場景物件識別工具，我負責製作應用Demo。",
+                "image": "images/srworks.jpg",
+                "link": "https://www.youtube.com/watch?v=ICEegHQcZlc&t=118s"
+            },
+            {
+                "order": 2,
+                "title": "WhiizU (2021-2022)",
+                "text": "健身車遊戲。我負責Shader的編寫、與Shader相關美術編輯器，偶爾支援前端介面的製作。",
+                "image": "images/whiizu.jpg",
+                "link": "https://www.youtube.com/watch?v=N7G_WVXvw9M&t=1s"
+            },
+            {
+                "order": 1,
+                "title": "絢花百兵帖 (2022-2024)",
+                "text": "商業手遊專案。刻前端、處理商城金流、Bundle下載、戰鬥系統、包版上架的流程。",
+                "image": "images/sma.jpg",
+                "link": "https://www.youtube.com/watch?v=ENKU4W9-2ik"
+            }
+        ]
+    }
+}

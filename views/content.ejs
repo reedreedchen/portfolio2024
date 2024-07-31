@@ -1,0 +1,55 @@
+<%- include("partials/header.ejs")%>
+<div class="col-12">
+    <div class="profile section">
+        <img class="center-block" src="images/me.jpg" alt="my profile photo">
+        <h2><%=locals.data.intro.title%></h2>
+        <p class="text center-block text-center"><%=locals.data.intro.text%></p>
+    </div>
+</div>
+<div class="col-12">
+    <div class="experience section">
+        <h3><%=locals.data.work.title%></h3>
+        <ul class="center-block">   
+            <%locals.data.work.texts.forEach(element => {%>
+                <li><%=element%></li>
+            <%});%>
+        </ul>
+    </div>
+</div>       
+<div class="col-12">
+    <div class="section expertise">
+        <h3><%=locals.data.expertise.title%></h3>
+        <div class="row gy-5 gx-lg-5 mx-auto" style="max-width: 600px">
+            <%locals.data.expertise.texts.forEach(element => {%>
+                <div class="col-md-3 order-<%=element.order%>">
+                    <img class="center-block" height="80px" src=<%=element.image%> alt=<%=element.alt%>>
+                </div>
+                <div class="col-md-9 order-<%=element.order%>">
+                    <p class="list-topic"><%=element.title%></p>
+                    <p class="text"><%=element.text%></p>
+                </div>
+            <%});%>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="work section">
+        <h3><%=locals.data.projects.title%></h3>
+        <div class="row gx-2 gy-2">
+            <%locals.data.projects.texts.forEach(element => {%>
+                <div class="col-lg-6 col-sm-12 order-<%=element.order%>">
+                    <div class="card">
+                        <img src=<%=element.image%> class="card-img-top" alt="image of the whiizu project">
+                        <div class="card-body">
+                            <h5 class="card-title"><%=element.title%></h5>
+                            <p class="card-text"><%=element.text%></p>
+                            <a href=<%=element.link%> class="btn btn-primary">展示</a>
+                        </div>
+                    </div>
+                </div>
+            <%});%>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer.ejs")%>
+<script>unlock();</script>

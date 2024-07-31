@@ -1,3 +1,46 @@
+:root{
+    --green: #2F9C2F;
+    --light-green: #85c984;
+}
+
+.my-nav-bg
+{
+    background-color: var(--green);
+}
+ 
+/*
+* Header
+*/
+
+.nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.nav-masthead .nav-link
+{
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus 
+{
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+
+
 .display-none
 {
     display:none;
@@ -54,7 +97,7 @@ body .section
 .section.expertise img
 {
     border-radius: 50%;
-    background-color: #85c984;
+    background-color: var(--light-green);
 }
 
 ul
@@ -71,7 +114,7 @@ ul li
 .list-topic{
     text-align: center;
     margin-bottom: 10px;
-    color: #85c984;
+    color: var(--light-green);
 }
 
 .text
@@ -81,13 +124,21 @@ ul li
     display: block;
 }
 
+
 h1
 {
-    color: #85c984;
-    text-align: center;
+    color: var(--light-green);
+    height: auto;
+    font-size:1.5em;
 }
 
 h2
+{
+    color: var(--light-green);
+    text-align: center;
+}
+
+h3
 {
     color: #85c984;
     margin: 50px 0px 50px 0px;
@@ -109,13 +160,13 @@ h2
     margin-top: 50px;
     margin-bottom: 50px;
     --bs-btn-color: #fff;
-    --bs-btn-bg: #2F9C2F;
+    --bs-btn-bg: var(--green);
     --bs-btn-border-color: #fff;
     --bs-btn-hover-color: #ffffff;
-    --bs-btn-hover-bg: #85c984;
-    --bs-btn-hover-border-color: #85c984;
+    --bs-btn-hover-bg: var(--light-green);
+    --bs-btn-hover-border-color: var(--light-green);
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #2F9C2F;
+    --bs-btn-active-bg: var(--green);
 }
 
 footer
